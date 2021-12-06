@@ -4,10 +4,10 @@ import { Card, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Meal = (props) => {
-    console.log(props.meal)
+   
 const{ idMeal, strMeal, strMealThumb, strInstructions} = props.meal;
 const url = `/resturant/${idMeal}`;
-
+console.log(url)
     return (
         <Col>
         <Card>

@@ -1,13 +1,14 @@
-import React from 'react';
-import { useParams } from 'react-router';
+
+import { useParams } from 'react-router-dom';
+
 
 const MealDetails = () => {
     
-const {mealID} = useParams();
+const mealID = useParams();
 console.log(mealID)
     return (
         <div>
-            <h1>meal details : {mealID}</h1>
+            <h1>meal details :{mealID} </h1>
         </div>
     );
 };
